@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Etiquetas meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi web completa</title> 
+    <meta name="description" content="Práctica 3 CSS3"> 
+    <meta name="keywords" content="HTML5, CSS3, práctica">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header><!-- header con un h1-->
+        <h1>Lorem Ipsum</h1>
+    </header>
+
+        <nav><!--menu navegación-->
+            <ul>
+                <li><a href="#lorem">Lorem</a></li>
+                <li><a href="#ipsum">Ipsum</a></li>
+                <li><a href="#dolor">Dolor</a></li>
+            </ul>
+        </nav>
+
+    <section><!-- sección con dos articulos-->
+        <article id="presentacion">
+            <h2>Presentación</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </article>
+
+       <article id="informacion">
+            <h2> Mas información</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+       </article>
+    </section>
+
+    <aside><!-- aside con un formulario-->
+        <h3>¡Contacta conmigo!</h3>
+        <form action="https://httpbin.org/post" method="POST">
+            <fieldset>
+                <legend>Contacto</legend> 
+    
+                <div class="form-group"> 
+                    <label for="nombre">Nombre:</label> 
+                    <input type="text" id="nombre" name="nombre" placeholder="Introduce tu nombre" required>
+                </div>
+
+                <div class="form-group"> 
+                    <label for="apellidos">Apellidos:</label>
+                    <input type="text" id="apellidos" name="apellidos" placeholder="Introduce tus apellidos" required>
+                </div>
+    
+                <div class="form-group">
+                    <label>Género:</label>
+                </div>
+                    <label> Masculino <input type="radio" name="genero" value="masculino" ></label>
+                    <label> Femenino <input type="radio" name="genero" value="femenino" ></label>
+                    <label> Otro <input type="radio" name="genero" value="otro" ></label>
+    
+                <div class="form-group">
+                    <label for="email">Email:</label> 
+                    <input type="email" id="email" name="email" placeholder="Introduce tu email" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="empresa">Empresa:</label> 
+                    <input type="text" id="text" name="empresa" placeholder="Introduce tu empresa" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="sector">Sector Profesional:</label> 
+                    <select id="sector" name="sector" required>
+                        <option value="sector1">FrontEnd</option>
+                        <option value="sector2">BackEnd</option>
+                        <option value="sector3">Data Analist</option>
+                        <option value="sector4">Marketing</option>
+                    </select>
+                </div>
+                
+                <label> Acepto las condiciones <input type="checkbox" name="condiciones" required> </label>
+    
+            </fieldset>
+    
+            <button type="submit">Enviar</button> 
+            <button type="reset">Reiniciar</button>
+        </form>
+    </aside>
+
+    <footer><!-- footer con logos que tienen un link que llevan a las redes sociales-->
+        <a href="https://twitter.com" target="_blank">
+            <img src="logos/twitter.png" alt="Twitter Logo">
+        </a>
+        <a href="https://linkedin.com" target="_blank">
+            <img src="logos/linkedin.png" alt="LinkedIn Logo">
+        </a>
+        <a href="https://instagram.com" target="_blank">
+            <img src="logos/instagram.png" alt="Instagram Logo">
+        </a>
+    </footer>
+</body>
+</html>
